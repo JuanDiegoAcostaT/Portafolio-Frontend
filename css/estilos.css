@@ -1,6 +1,12 @@
-body {
-background: whitesmoke;
+/*Reglas
+Selectores
+declaraciones
+Propiedades 
+Valores*/
 
+body {
+background: rgb(10, 219, 156);
+color: antiquewhite;
 }
 
 header {
@@ -8,3 +14,11 @@ header {
     background: black;
 
 }
+
+/*Selector de  etiqueta -> header - body - section - article - nav*/
+/*Selector descendente*/
+/*body header div nav ol li a{}*/
+/*Selector de clase con un .*/
+/*.link{   }*/
+/*selector de id*/
+/*#portafolio{}*/
