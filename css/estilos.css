@@ -54,10 +54,25 @@ h1 strong{
 }
 
 
+.project{
+
+    /* border-top: 10px solid  red;
+    border-left: 10px solid  red;
+    border-right: 10px solid  red;
+    border-bottom: 10px solid  red; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid #A9B0B8;
+    border-radius: 10px;
+    }
+
 .project-details {
 
     width: 500px;
 }
+
+
 .project-imageContainer {
 
     width: 500px;
