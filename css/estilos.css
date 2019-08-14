@@ -74,7 +74,10 @@ h1 strong{
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background: white
+    background: white;
+    display: flex;
+
+
     }
 
     .portfolio{
@@ -84,6 +87,8 @@ h1 strong{
 .project-details {
 
     width: 500px;
+   
+ 
 }
 
 
@@ -91,6 +96,7 @@ h1 strong{
 .project-imageContainer {
 
     width: 500px;
+
 }
 
 .header{
@@ -112,3 +118,6 @@ h1 strong{
     background-position-x: right;
 }
 
+ol {
+    display: contents;
+}
