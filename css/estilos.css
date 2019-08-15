@@ -40,8 +40,8 @@ h6 {
 }
 
 h1 {
-
-    margin: 100px 150px 70px 30px;
+    margin: 0;
+    /* margin: 100px 150px 70px 30px; */
     font-size: 45px;
     font-display: 40px;
     line-height: 1.4em;
@@ -57,6 +57,17 @@ h1 strong{
 
 .portfolio{
     background: #A9B0B8;
+}
+
+.hero {
+    height: 300px;
+    background-image: url(../Heroe.jpg);
+    background-color:  black;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -87,10 +98,7 @@ h1 strong{
 .project-details {
 
     width: 500px;
-   
- 
 }
-
 
 
 .project-imageContainer {
@@ -102,6 +110,21 @@ h1 strong{
 .header{
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+ol,
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+figure {
+    margin: 0px;
 }
 
 .header a {
@@ -109,17 +132,28 @@ h1 strong{
     text-decoration: none;
 }
 
-.hero {
-    height: 300px;
-    background-image: url(../Heroe.jpg);
-    background-color:  black;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+.menu {
+    height: inherit;
+}
+ 
+.header ol {
+display: flex;
+height: inherit;
+
 }
 
-ol {
-    display: contents;
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    
+    display: flex; 
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+
 }
 
 .flexbox {
@@ -135,5 +169,22 @@ ol {
     flex-shrink: 0;
     margin: 20px;
 
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer img {
+    vertical-align:  middle;
+}
+
+
+.footer a {
+    color: white;
 }
 
