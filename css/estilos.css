@@ -55,6 +55,15 @@ h1 strong{
     color: #A9B0B8;
 }
 
+h2 {
+    color: #A9B0B8;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
 .portfolio{
     background: #A9B0B8;
 }
@@ -82,17 +91,41 @@ h1 strong{
     border-style: solid; */
     border: 1px solid #A9B0B8;
     border-radius: 10px; 
-    margin: 10px;
-    margin-bottom: 15px;
     padding: 20px;
     background: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    }
 
+    .project-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .project-course,
+    .project-date,
+    .project-url
+    {
+        margin: 10px 0px;
 
     }
 
+.project-description {
+
+    font-size: 20px;
+}
+
+.project strong {
+
+    font-family: 'Anton', sans-serif;
+}
+
     .portfolio{
         background: #fafafa;
+        padding: 20px;
     }
 
 .project-details {
@@ -104,6 +137,7 @@ h1 strong{
 .project-imageContainer {
 
     width: 500px;
+    padding: 55px;
 
 }
 
