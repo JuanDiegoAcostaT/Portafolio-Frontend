@@ -11,37 +11,47 @@
 </head>
 <body>
     <header class="header">
-  
-      <figure class="logo">
-            <img src="Logo.png" height="50px"  alt="logo de juan diego acosta">
-      </figure>
-    <nav class="menu">
-        <ol>
-            <li>
-                <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <br>
-            <li>
-                <a class="link" href="#experiencia">Experiencia</a>
-            </li>
-            <br>
-            <li>
-                <a class="link" href="#trabajemos juntos">Trabajemos juntos</a>
-            </li>
-        </ol>
-    </nav>
+        <div class="container">
+
+                <figure class="logo">
+                        <img src="Logo.png" height="50px"  alt="logo de juan diego acosta">
+                  </figure>
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="link" href="#contacto">Trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+        </div>
+ 
   
     </header>
     <section class="hero">
-        <h1>
-            Hola! Soy <strong>Juan Diego Acosta</strong> <br>
-            Desarrollador <br> experto SEO, Google ads <br> y  diseñador grafico
-        </h1>
-        <!-- <img src="Heroe.jpg" width="500" height="300" alt="Imagen de portada"> -->
+
+        <div class="container">
+                <h1>
+                        Hola! Soy <strong>Juan Diego Acosta</strong> <br>
+                        Desarrollador <br> experto SEO, Google ads <br> y  diseñador grafico
+                    </h1>
+        <img class="hero-image" src="Heroe.jpg" width="500" height="300" alt="imagen de portada">
+
+        </div>
+        
     </section>
   
     <section id="portafolio" class="portfolio"> 
-            <h2>Potafolio (Proyectos destacados)</h2>
+        <div class="container">
+
+                <h2>Potafolio (Proyectos destacados)</h2>
             
                 <article class="project">
                         <div class="project-details">
@@ -77,78 +87,116 @@
             <img class="project-image" src="atm.png" width="500" height="300" alt="Imagen del Proyecto del Cajero">
     </figure>
 </article>
- 
+
+        </div>
     </section>
-    <h2 class="event-list-title">Mas sobre mi experiencia </h2>
+
+    <div class="container">
+
+            <h2 class="event-list-title">Mas sobre mi experiencia </h2>
+
+
+    </div>
     <section id="experiencia"  class="event-list">
-  
+  <div class="container">
+
         <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
-            </figure>
-            <div class="event-detail">
-                    <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
-                    <p class="event-description"> 
-                            La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
-                            <br> <br>
-                             <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
-            </div>
-                </article>
-                <article class="event">
-                        <figure class="event-imageContainer">
-                            <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
-                        </figure>
-                        <div class="event-detail">
-                                <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
-                                <p class="event-description"> 
-                                        La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
-                                            <br> <br>
-                                     
-                                         <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
-                        </div>
-                            </article>
-                            <article class="event">
-                                    <figure class="event-imageContainer">
-                                        <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
-                                    </figure>
-                                    <div class="event-detail">
-                                            <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
-                                            <p class="event-description"> 
-                                                    La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
-                                                        <br> <br>
-                                                     <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
-                                    </div>
-                                        </article>
-                                        <article class="event">
-                                                <figure class="event-imageContainer">
-                                                    <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
-                                                </figure>
-                                                <div class="event-detail">
-                                                        <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
-                                                        <p class="event-description"> 
-                                                                La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
-                                                                    
-                                                                    <br> <br>
-                                                                 <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
-                                                </div>
-                                                    </article>
-                <br>
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
+                </figure>
+                <div class="event-detail">
+                        <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
+                        <p class="event-description"> 
+                                La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
+                                <br> <br>
+                                 <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
+                </div>
+                    </article>
+                    <article class="event">
+                            <figure class="event-imageContainer">
+                                <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
+                            </figure>
+                            <div class="event-detail">
+                                    <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
+                                    <p class="event-description"> 
+                                            La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
+                                                <br> <br>
+                                         
+                                             <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
+                            </div>
+                                </article>
+                                <article class="event">
+                                        <figure class="event-imageContainer">
+                                            <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
+                                        </figure>
+                                        <div class="event-detail">
+                                                <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
+                                                <p class="event-description"> 
+                                                        La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
+                                                            <br> <br>
+                                                         <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
+                                        </div>
+                                            </article>
+                                            <article class="event">
+                                                    <figure class="event-imageContainer">
+                                                        <img class="event-image" src="Escuela de javascript.jpg" width="500" height="300" alt="Evento de Javascript">
+                                                    </figure>
+                                                    <div class="event-detail">
+                                                            <h3 class="event-title">Escuela Javascritp Bogota 2019</h3>
+                                                            <p class="event-description"> 
+                                                                    La Escuela de JavaScript es el mejor esfuerzo de blended education, educación online y presencial para especializarte en desarrollo Full Stack con JavaScript.
+                                                                        
+                                                                        <br> <br>
+                                                                     <a  class="event-url" href="https://www.youtube.com/watch?v=9zn-cucAHO4" target="_blank"> Ver mas sobre La Escuela </a>
+                                                    </div>
+                                                        </article>
+
+  </div>
+
+               
     </section>
-    <section id="trabajemos juntos" class="contact">
-        <form action="/suscripcion/">
-                <h3>Creamos algo juntos?</h3>
-            <input type="datetime" placeholder="Dejanos tu email" id="email" class="form-email">
-            <input type="button" value="Enviar"> 
-        </form>
+
+
+    <section id="contacto" class="contact">
+
+        <div class="container">
+                <form action="/suscripcion/" class= "form-email">
+                    <h3>Creamos algo juntos?</h3> 
+                    <input type="text" placeholder="Dejanos tu email" id="email" >
+                    <button  >Enviar</button>
+                   
+                </form>
+        
+        
+                <div class="social">
+            <a href="https://www.facebook.com/juandiego.acostataborda" class="social-link facebook"></a>
+            <a href="https://github.com/JuanDiegoAcostaT?tab=repositories" class="social-link github"></a>
+            <a href="http://instagram.com/acosta11_11" class="social-link instagram"></a>
+        
+                </div>
+
+        </div>
+   
          </section>
-         <br>
+         
+
+         
     <footer class="footer">
-        <div >
-            <p>Juan DIego Acosta Taborda &#174 </p>
+
+        <div class="container"> 
+
+            
+            <div >
+                <p>Juan DIego Acosta Taborda &#174 </p>
+            </div>
+            <div>
+               <p>Designed by <a href="mailto:juandiegoat01@gmail.com" target="blank"> @juandiego-acosta</a> <img  width="80px" src="logo.png" alt=""></p>                 
+            </div>
+
         </div>
-        <div>
-           <p>Designed by <a href="https://github.com/JuanDiegoAcostaT?tab=repositories" target="blank"> @juandiego-acosta</a> <img  width="80px" src="logo.png" alt=""></p>                 
-        </div>
+
+
+        
     </footer>
 </body>
 </html>

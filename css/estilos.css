@@ -56,7 +56,7 @@ h1 strong{
 }
 
 h2 {
-    color: #A9B0B8;
+    color: black;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
     font-weight: bold;
@@ -70,13 +70,21 @@ h2 {
 
 .hero {
     height: 300px;
-    background-image: url(../Heroe.jpg);
-    background-color:  black;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-image: url(../Heroe.jpg); */
+    background-color:  #060606;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-image {
+       
+    object-fit: cover;
+
 }
 
 
@@ -124,7 +132,7 @@ h2 {
 }
 
     .portfolio{
-        background: #fafafa;
+        background: #A9B0B8;
         padding: 20px;
     }
 
@@ -223,7 +231,7 @@ height: inherit;
 }
 
 .event-list{
-
+    flex-wrap: wrap;
     display: flex;
 
 }
@@ -275,5 +283,103 @@ padding: 5px 20px;
 text-decoration: none;
 color: #A9B0B8;
 border-radius: 5px;
+margin-left: 70px;
+
 }
 
+.contact{
+
+    background-color: #A9B0B8;
+    color: black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.social{
+
+    margin: 50px;
+   
+}
+
+.social-link
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    margin-left: 30px;
+    
+/* background-size: 50px 50px;   esto se puede hacer para no poner todos los size de los hijos  */
+ 
+} 
+
+
+.social-link.facebook {
+
+background-image: url('../facebook.svg') ;
+background-size: 50px 50px; 
+
+}
+
+
+.social-link.github {
+
+    background-image: url('../github.svg') ;
+    background-size: 50px 50px; 
+    
+    }
+
+    
+.social-link.instagram {
+
+    background-image: url('../instagram.svg') ;
+    background-size: 50px 50px; 
+    
+    }
+
+    .form-email input{
+
+        border-color: black;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 10px 20px 10px 25px;
+        background-image: url('../email\ \(2\).svg');
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position-y: center; 
+        background-position-x: 5px;
+    }
+
+    .form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: black;
+    padding: 5px 0px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto 0px;
+    
+
+   
+    }
+
+    .form-email h3 {
+
+        font-family: 'Fjalla One', sans-serif;
+
+    }
+
+    .container {
+        margin: 0px auto;
+        width: 1000px;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        height: inherit;
+        flex-wrap: inherit;
+    }
