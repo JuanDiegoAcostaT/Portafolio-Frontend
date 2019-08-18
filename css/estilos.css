@@ -25,7 +25,7 @@ header {
 
 body {
     margin: 0px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
 }
 
@@ -58,7 +58,7 @@ h1 strong{
 h2 {
     color: black;
     text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 40px;
@@ -128,7 +128,7 @@ h2 {
 
 .project strong {
 
-    font-family: 'Anton', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
     .portfolio{
@@ -370,7 +370,7 @@ background-size: 50px 50px;
 
     .form-email h3 {
 
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     }
 
