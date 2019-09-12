@@ -42,7 +42,7 @@ h6 {
 h1 {
     margin: 0;
     /* margin: 100px 150px 70px 30px; */
-    font-size: 45px;
+    font-size: 43px;
     font-display: 40px;
     line-height: 1.4em;
     letter-spacing: 2px;
@@ -80,7 +80,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    /* padding: 40px; */
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -107,6 +108,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    flex-wrap: wrap;
     }
 
     .project-title {
@@ -119,7 +121,7 @@ h2 {
     .project-date,
     .project-url
     {
-        margin: 10px 0px;
+        margin: .4em 0;
 
     }
 
@@ -140,14 +142,13 @@ h2 {
 
 .project-details {
 
-    width: 500px;
+    width: 50%;
 }
 
 
 .project-imageContainer {
 
-    width: 500px;
-    padding: 55px;
+   width: 50%;
 
 }
 
@@ -158,6 +159,7 @@ h2 {
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap:wrap; 
 }
 
 ol,
@@ -220,7 +222,8 @@ height: inherit;
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -246,8 +249,8 @@ margin-left: 20px;
 
 .event {
 
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0px;
     border-radius: 10px;
     overflow: hidden;
@@ -297,6 +300,7 @@ margin-left: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -342,6 +346,11 @@ background-size: 50px 50px;
     
     }
 
+    .form-email {
+
+        padding-bottom: 60px;
+    }
+
     .form-email input{
 
         border-color: black;
@@ -378,7 +387,10 @@ background-size: 50px 50px;
 
     .container {
         margin: 0px auto;
-        width: 1000px;
+       max-width: 1000px;
+       /* El truco de arriba y el truco de abajo son para ajustar el tamaño de la pagina para enmpezar a hacer media queries y es un TRUCO */
+       flex: 1;
+       width: 100%;
         display: inherit;
         justify-content: inherit;
         align-items: inherit;
@@ -386,28 +398,237 @@ background-size: 50px 50px;
         flex-wrap: inherit;
     }
 
-
+  
+ 
     /* si se va hacer el desktop firts lo mas recomendable es inicciar desde el mediaqueri mas grande */
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1023px){
 
+        .hero{
+
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            padding: 2em;
+            
+            }
+            
+            .hero-image {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            h1 {
+             position: relative;
+                font-size: 2em;
+                z-index: 2;
+            }
+ .container button {
+
+    padding-top: 1px;
+  
+ }
+
+ .form-email {
+
+    padding-bottom: 80px;
+ }
 
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
 
-body {
 
-    border: 10px solid green;
+.container {
+
+justify-content: space-around;
 
 }
+ .header {
+
+display: block;
+height: auto;
+}
+
+.header ol {
+
+display: initial; /*O BLOVK*/
+
+}
+
+.header ol li {
+
+height: 50px;
+text-align: center;
+
+}
+
+.header a {
+    
+    justify-content: center;
+}
+
+.header .logo {
+
+    text-align: center;
+
+}
+
+.project {
+
+    display: block;
+}
+
+.project-imageContainer {
+
+width: auto;
+text-align: center;
+
+}
+
+.project-imageContainer img {
+
+    max-width: 100%;
+    width: 100%;
+    
+    
+    }
+
+.project-details {
+
+
+    width: auto;
+    font-size: 16px;
+}
+
+.project-title {
+
+font-size: 1.5em;
+margin-bottom: .3em;
+
+}
+
+.project-url{
+
+    font-size: 1em;
+    
+}
+
+.project-course{
+
+    font-size: .7em;
+}
+
+.project-date {
+
+    font-size: 1em;
+}
+
+.project-description {
+
+    font-size: .8em;
+
+}
+
+.event-url {
+
+    margin-left: 20px;
+}
+
+.form-email {
+
+    padding-left: 10px;
+}
+
+
 
     }
 
     @media screen and (max-width: 480px){
 
+
+        h1 {
+
+            font-size: 1em;
+
+        }
+        .project-details {
+    
+            font-size: 12px;
+        }
         
+        .event {
+
+            width: auto;
+            flex-shrink: initial;
+
+        }
+
+        .event img {
+
+            width: 100%;
+        }
+
+        .event-url {
+
+            margin-left: 65px;
+        }
+
+        .contact {
+
+            height: auto;
+            padding: 16px 0;
+            text-align: center;
+            display: block;
+
+        }
+
+        .form-email {
+
+            padding: initial;
+
+        }
+
+        .container {
+
+ display: block;
+ text-align: center;
+        }
+
+        .social {
+
+            padding-right: 18px;
+
+        }
     }
     @media screen and (max-width: 320px){
 
-        
+
+        .event-url {
+
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .event-detail {
+
+            margin: 10px 10px 10px 10px;
+        }
+
+        .social {
+
+            display: inline-flex;
+            margin: 1px;
+        }
+        .social-link {
+
+            margin-left: 15px;
+        }
+
+
+    
+       
     }
