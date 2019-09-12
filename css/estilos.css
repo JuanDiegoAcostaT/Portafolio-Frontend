@@ -432,7 +432,15 @@ background-size: 50px 50px;
              position: relative;
                 font-size: 2em;
                 z-index: 2;
+               color: black;
             }
+
+            h1 strong {
+
+                color: #060606;
+
+        }
+
  .container button {
 
     padding-top: 1px;
